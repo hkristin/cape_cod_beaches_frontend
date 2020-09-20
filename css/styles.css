@@ -1,0 +1,65 @@
+body {
+    font-family: "Times New Roman", Georgia, Serif;}
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#container {
+    width: 1279px;
+    margin: auto;
+    margin-top: 50px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.town-card{
+    float: left;
+    width: 393px;
+    height: 555px;
+    background-color: bisque;
+    color: cornflowerblue;
+    margin: 15px;
+    text-align: center;
+}
+
+.beach-card {
+    float: left;
+    width: 393px;
+    height: 555px;
+    background-color: cornflowerblue;
+    color: bisque;
+    margin: 15px;
+    text-align: center;
+}
+.center-text{
+    text-align: center;
+}
+
+#town-container {
+    display: none;
+}
+
+#beach-container {
+    
+}
+
+.togglers {
+    display: flex;
+    justify-content: center;
+}
+
+.town-card > img {
+    margin-top: 20px;
+}
+.beach-card > img {
+    margin-top: 20px;
+}

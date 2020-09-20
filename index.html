@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Cape Cod Beaches</h1>
+        <div id="container">
+            <div id="form">
+                <h3>New Beach</h3>
+                <form id="beach-form">
+                    <input type="text" name="name" placeholder="name"/>
+                    <br/>
+                    <input type="number" name="length_of_beach" placeholder="length in miles"/>
+                    <br/>
+                    <input type="text" name="img" placeholder="img url"/>
+                    <br/>
+                    <select name="beach[town_id]" id="beach_town_id">
+                        <option value="">Please select</option>
+                        <option value="1" selected="selected">Barnstable</option>
+                        <option value="2">Bourne</option>
+                        <option value="3">Brewster</option>
+                        <option value="4">Chatham</option>
+                        <option value="5">Dennis</option>
+                        <option value="6">Eastham</option>
+                        <option value="7">Falmouth</option>
+                        <option value="8">Harwich</option>
+                        <option value="9">Mashpee</option>
+                        <option value="10">Orleans</option>
+                        <option value="11">Provincetown</option>
+                        <option value="12">Sandwich</option>
+                        <option value="13">Truro</option>
+                        <option value="14">Wellfleet</option>
+                        <option value="15">Yarmouth</option>
+                      </select>
+                      <br/>
+                    <input type="submit" value="Submit"/>
+                </form>
+                <br><br><br>
+            </div>
+            <div class="togglers">
+                <button id="toggleTowns">Show Towns</button>
+                <button id="toggleBeaches">Show Beaches</button>
+            </div>
+
+            <div id="town-container"></div>
+            <div id="beach-container"></div>
+        </div>
+    </body>
+
+<script type="text/javascript" src="services/api.js"></script>   
+<script type="text/javascript" src="services/togglers.js"></script>   
+<script type="text/javascript" src="models/town.js"></script>
+<script type="text/javascript" src="models/beach.js"></script>
+<script type="text/javascript" src="src/index.js"></script>
+</html>
