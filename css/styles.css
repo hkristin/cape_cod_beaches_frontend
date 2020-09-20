@@ -55,6 +55,7 @@ h1 {
 .togglers {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .town-card > img {
@@ -62,4 +63,5 @@ h1 {
 }
 .beach-card > img {
     margin-top: 20px;
+    justify-content: center;
 }
