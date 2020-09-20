@@ -1,16 +1,24 @@
 class Town {
-    constructor(id, name, location, image) {
+    constructor(id, name, location, image, beaches) {
         this.id = id,
         this.name = name,
         this.location = location,
         this.image = image,
+        this.beaches = beaches,
         this.renderTown()
     }
-    townHTML() {
+    townHTML() { 
         return `
             <img src="${this.image}" />
             <h2>${this.name}</h2>
-            <p>Location: ${this.location}</p> `
+            <p>Location: ${this.location}</p> 
+            <p>Beaches: </p><br/>
+            <ul>
+              ${this.beaches.map(beach => {
+                return `<li style="text-decoration: none;">${beach.name}</li>`
+              })}
+            </ul>
+            `
     }
     deleteTown(e){
         const id = parseInt(e.target.parentElement.id)

@@ -4,8 +4,8 @@ class API {
           .then(resp => resp.json())
           .then(towns => {
             for(let town of towns) {
-                const { id, name, location, image } = town
-                new Town(id, name, location, image)
+                const { id, name, location, image, beaches } = town
+                new Town(id, name, location, image, beaches)
             }
           })
     }
