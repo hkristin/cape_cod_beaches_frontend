@@ -1,10 +1,10 @@
 class Beach {
-    constructor(id, name, length_of_beach, image, townID) {
+    constructor(id, name, length_of_beach, image, town) {
         this.id = id,
         this.name = name,
         this.length_of_beach = length_of_beach,
         this.image = image,
-        this.townID = townID,
+        this.town = town,
         this.renderBeach()
     }
 
@@ -13,7 +13,7 @@ class Beach {
         return `
             <img src="${this.image}" />
             <h2>${this.name}</h2>
-            <p>Located in ${document.getElementById('town-container').children[this.townID-1].getElementsByTagName('h2')[0].innerText} </p>
+            <p>Located in ${this.town.name} </p>
             <p>Length of Beach: ${this.length_of_beach}</p> 
             `
     }

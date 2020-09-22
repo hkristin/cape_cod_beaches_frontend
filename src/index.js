@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded",function(){
     document.getElementById('toggleTowns').addEventListener('click', toggleTowns)
     document.getElementById('toggleBeaches').addEventListener('click', toggleBeaches)
 })
-
 const toggleTowns = () => {
     document.getElementById('town-container').setAttribute('style', 'display: block')
     document.getElementById('beach-container').setAttribute('style', 'display: none')
