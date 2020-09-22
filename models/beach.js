@@ -10,6 +10,7 @@ class Beach {
 
 
     beachHTML() {
+        debugger
         return `
             <img src="${this.image}" />
             <h2>${this.name}</h2>

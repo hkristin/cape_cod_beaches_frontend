@@ -13,9 +13,9 @@ class API {
         fetch(`http://localhost:3000/beaches`)
           .then(resp => resp.json())
           .then(beaches => {
-            for(let beach of beaches) {
-                const { id, name, length_of_beach, image, town_id } = beach
-                new Beach(id, name,length_of_beach, image, town_id)
+            for(let beach of beaches) { 
+                const { id, name, length_of_beach, image, town } = beach
+                new Beach(id, name,length_of_beach, image, town)
             }
             }) 
     }
