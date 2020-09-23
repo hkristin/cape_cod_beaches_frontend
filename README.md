@@ -1,4 +1,4 @@
-Welcome to my Cape Cod Beaches App!
+Welcome to my Cape Cod Beaches App! 
 
 About
 This is a single-page application that renders and displays content with Javascript through the frontend and manages local API data via Rails (backend).
