@@ -15,7 +15,7 @@ class Beach {
             <img src="${this.image}" />
             <h2>${this.name}</h2>
             <p>Located in ${this.town.name} </p>
-            <p>Length of Beach: ${this.length_of_beach}</p> 
+            <p>Length of Beach: ${this.length_of_beach} miles</p> 
             `
     }
     renderBeach() {
