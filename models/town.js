@@ -11,8 +11,8 @@ class Town {
         return `
             <img src="${this.image}" />
             <h2>${this.name}</h2>
-            <p>Location: ${this.location}</p> 
-            <p>Beaches: </p><br/>
+            <strong><p>Location: </strong>${this.location}</p><br><br><br>
+            <strong><p>Beaches: </p></strong>
             <ul>
               ${this.beaches.map(beach => {
                 return `<li style="text-decoration: none;">${beach.name}</li>`

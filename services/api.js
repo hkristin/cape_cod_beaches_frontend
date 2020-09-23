@@ -22,16 +22,15 @@ class API {
 
     static addBeach(e){
         e.preventDefault()
-    
-        //let sel = e.target.elements[3].options
+        let townId = document.getElementById('town_id').options[document.getElementById('town_id').options.selectedIndex].value
         let data = {
             'name': e.target.name.value,
             'length_of_beach': e.target.length_of_beach.value,
             'image': e.target.img.value,
-            'town_id': e.target.elements[3].options[e.target.elements[3].options.selectedIndex].value
+            'town_id': townId
         };
         // write our  fetch and send it to our back end
-
+        
         // grab our fetch response
         
         fetch(`http://localhost:3000/beaches`, {
@@ -43,8 +42,8 @@ class API {
         })
         .then(resp => resp.json())
         .then(beach => {
-            const { id, name,length_of_beach, image, town_id} = beach
-            const newBeach = new Beach(id, name,length_of_beach, image, town_id)
+            const { id, name,length_of_beach, image, town} = beach
+            const newBeach = new Beach(id, name,length_of_beach, image, town)
             document.getElementById('beach-form').reset()
         })
 

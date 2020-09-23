@@ -30,7 +30,10 @@ h1 {
     margin: 15px;
     text-align: center;
 }
-
+.town-card > img {
+    width: 300px;
+    height: 200px;
+}
 .beach-card {
     float: left;
     width: 393px;
@@ -39,6 +42,11 @@ h1 {
     color: bisque;
     margin: 15px;
     text-align: center;
+}
+
+.beach-card > img {
+    width: 300px;
+    height: 200px;
 }
 .center-text{
     text-align: center;
@@ -64,4 +72,8 @@ h1 {
 .beach-card > img {
     margin-top: 20px;
     justify-content: center;
+}
+ul > li {
+    list-style-type: none;
+    text-align: center;
 }
