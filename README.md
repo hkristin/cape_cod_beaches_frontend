@@ -5,6 +5,8 @@ This is a single-page application that renders and displays content with Javascr
 
 Users can create and delete beaches that belong to the 15 towns of Cape Cod, Massachussetts.
 
+https://youtu.be/Nh7cmemjW6Q
+
 (Link to the [backend](https://github.com/hkristin/cape_cod_beaches_backend))
 
 Usage
